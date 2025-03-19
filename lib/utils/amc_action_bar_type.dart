@@ -1,0 +1,1 @@
+enum AMCActionBarType { iconOnly, custom }
