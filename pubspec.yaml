@@ -4,7 +4,7 @@ version: 0.0.1
 publish_to: "none"
 
 environment:
-  sdk: ^3.5.4
+  sdk: ^3.6.2
   flutter: ">=1.17.0"
 
 dependencies:
@@ -18,7 +18,7 @@ dependencies:
   amc_flutter_kit:
     git:
       url: https://github.com/salahvk/Amc-Mobile-Flutter-Kit
-      ref: v-1 #branch name
+      ref: amc-dev #branch name
       #path: ../roptia_flutter_kit
 
 dev_dependencies:
