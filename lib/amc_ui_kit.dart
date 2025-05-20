@@ -21,6 +21,7 @@ export 'animations/animated_listitem.dart';
 // Model
 export 'model/device_info_model.dart';
 export 'model/app_config_model/app_config_model.dart';
+export 'model/local/amc_global.dart';
 
 // Utils - Const
 export 'utils/const/assets.dart';
