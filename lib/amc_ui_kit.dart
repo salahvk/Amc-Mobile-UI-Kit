@@ -10,7 +10,7 @@ export 'images/app_icon.dart';
 export 'images/amc_network_image.dart';
 
 export 'widgets/amc_text.dart';
-export 'widgets/rk_sized_box.dart';
+export 'app/widgets/rk_sized_box.dart';
 export 'widgets/amc_divider.dart';
 export 'widgets/amc_button.dart';
 export 'widgets/amc_text_form_field.dart';
