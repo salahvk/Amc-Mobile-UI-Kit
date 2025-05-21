@@ -67,3 +67,4 @@ export 'widgets/tab/tab_outline_button.dart';
 export 'widgets/mobile/shimmers/case_card_shimer.dart';
 export 'widgets/mobile/shimmers/dropdown_shimer.dart';
 export 'widgets/mobile/shimmers/skeleton.dart';
+export 'widgets/common/riple_loader.dart';
