@@ -6,7 +6,6 @@ import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:share_plus/share_plus.dart';
 
-
 class PdfDownload {
   Future<String?> viewPdf(String fileName, List<int> bytes) async {
     final directory = await getApplicationDocumentsDirectory();
