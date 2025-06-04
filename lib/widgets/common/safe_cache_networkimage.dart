@@ -68,8 +68,8 @@ class SafeCachedNetworkImage extends StatelessWidget {
         : SizedBox(
             height: height,
             width: width,
-            child: const Center(
-              child: CircularProgressIndicator(),
+            child:  Center(
+              child: Image.asset(AppAssets.assetsImagesNoImage),
             ),
           );
   }
