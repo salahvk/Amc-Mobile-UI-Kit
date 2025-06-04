@@ -1,4 +1,5 @@
 import 'package:amc_ui_kit/model/local/amc_global.dart';
+import 'package:amc_ui_kit/styles/get_color.dart';
 import 'package:amc_ui_kit/utils/const/assets.dart';
 import 'package:amc_ui_kit/utils/getter/get_image_url.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -57,11 +58,12 @@ class SafeCachedNetworkImage extends StatelessWidget {
                     imageUrl: getImageUrl(imageUrl, amcGlobal),
                     errorWidget: (context, url, error) =>
                         Image.asset(AppAssets.assetsImagesNoImage),
-                    // progressIndicatorBuilder: needLoader ?? false
-                    //     ? (context, url, progress) => CircularProgressIndicator(
-                    //           color: getColor(scaffoldBackgroundColor),
-                    //         )
-                    //     : null,
+                    progressIndicatorBuilder: needLoader ?? false
+                        ? (context, url, progress) => CircularProgressIndicator(
+                              color: getColor(amcGlobal.firebaseThemeConfig
+                                  ?.appTheme?.light?.colorScheme?.primary),
+                            )
+                        : null,
                   )
         : SizedBox(
             height: height,
