@@ -59,10 +59,12 @@ class SafeCachedNetworkImage extends StatelessWidget {
                     errorWidget: (context, url, error) =>
                         Image.asset(AppAssets.assetsImagesNoImage),
                     progressIndicatorBuilder: needLoader ?? false
-                        ? (context, url, progress) => CircularProgressIndicator(
-                              color: getColor(amcGlobal.firebaseThemeConfig
-                                  ?.appTheme?.light?.colorScheme?.primary),
-                            )
+                        ? (context, url, progress) => Center(
+                          child: CircularProgressIndicator(
+                                color: getColor(amcGlobal.firebaseThemeConfig
+                                    ?.appTheme?.light?.colorScheme?.primary),
+                              ),
+                        )
                         : null,
                   )
         : SizedBox(
